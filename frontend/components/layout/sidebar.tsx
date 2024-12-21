@@ -1,7 +1,9 @@
+'use client';
+
 import { Home, Compass, PlaySquare, Clock, ThumbsUp, History } from 'lucide-react';
 import Link from 'next/link';
-import { cn } from '../lib/utils';
-import { Button } from './ui/button';
+import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
 
 interface SidebarItemProps {
   icon: React.ReactNode;
@@ -40,4 +42,4 @@ export function Sidebar() {
       </div>
     </div>
   );
-} 
+}

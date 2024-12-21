@@ -1,21 +1,27 @@
-export const videos = [
+import { Video } from '@/types';
+
+export const videos: Video[] = [
   {
     id: '1',
-    title: 'Sample Video 1',
-    thumbnailUrl: '/path/to/thumbnail1.jpg',
-    channelName: 'Channel 1',
-    channelAvatarUrl: '/path/to/avatar1.jpg',
-    views: 1000,
-    uploadDate: '2023-12-01T00:00:00Z',
+    title: 'Building a Modern Web Application',
+    description: 'Learn how to build a modern web application using Next.js and React...',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee',
+    embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    channelName: 'TechTutorials',
+    channelAvatarUrl: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1',
+    uploadDate: '2024-03-20',
+    views: 15420
   },
   {
     id: '2',
-    title: 'Sample Video 2',
-    thumbnailUrl: '/path/to/thumbnail2.jpg',
-    channelName: 'Channel 2',
-    channelAvatarUrl: '/path/to/avatar2.jpg',
-    views: 2000,
-    uploadDate: '2023-12-02T00:00:00Z',
+    title: 'Advanced TypeScript Patterns',
+    description: 'Dive deep into advanced TypeScript patterns and best practices...',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159',
+    embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    channelName: 'CodeMaster',
+    channelAvatarUrl: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c',
+    uploadDate: '2024-03-19',
+    views: 8302
   },
-  // 他のビデオデータを追加
-]; 
+  // Add more sample videos as needed
+];

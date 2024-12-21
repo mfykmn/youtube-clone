@@ -1,6 +1,8 @@
+'use client';
+
 import { Play } from 'lucide-react';
 import Link from 'next/link';
-import { Button } from './ui/button';
+import { Button } from '@/components/ui/button';
 
 export function Header() {
   return (
@@ -20,4 +22,4 @@ export function Header() {
       </div>
     </header>
   );
-} 
+}

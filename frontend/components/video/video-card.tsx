@@ -1,8 +1,8 @@
-import { Video } from '../types';
 import { formatDistanceToNow } from 'date-fns';
 import Link from 'next/link';
-import { Card, CardContent } from './ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
+import { Video } from '@/types';
+import { Card, CardContent } from '@/components/ui/card';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 interface VideoCardProps {
   video: Video;
@@ -21,10 +21,10 @@ export function VideoCard({ video }: VideoCardProps) {
         </div>
         <CardContent className="p-4">
           <div className="flex space-x-3">
-            <div className="h-9 w-9">
+            <Avatar className="h-9 w-9">
               <AvatarImage src={video.channelAvatarUrl} alt={video.channelName} />
               <AvatarFallback>{video.channelName[0]}</AvatarFallback>
-            </div>
+            </Avatar>
             <div className="space-y-1">
               <h3 className="line-clamp-2 font-medium leading-tight">
                 {video.title}
@@ -47,4 +47,4 @@ export function VideoCard({ video }: VideoCardProps) {
       </Card>
     </Link>
   );
-} 
+}
